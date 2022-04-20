@@ -1,0 +1,51 @@
+﻿<html><head>
+
+
+</head><body>
+
+https://github.com/summernote/summernote/<br><br>
+
+https://summernote.org/<br><br>
+
+
+<!-- include libraries(jQuery, bootstrap) -->
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"  crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+ 
+
+<!-- include summernote css/js-->
+<link href="summernote.css" rel="stylesheet">
+<script src="summernote.js"></script>
+
+
+<div id="summernote">Hello Summernote</div>
+
+<div class="summernote">Hello Summernote</div>
+<script>
+/*
+$('.summernote').summernote({
+  height: 150,   //set editable area's height
+  codemirror: { // codemirror options
+    theme: 'monokai'
+  }
+});
+*/
+
+
+$(document).ready(function() {
+  $('#summernote').summernote();
+
+
+
+//get the HTML source code underlying the text in the editor:
+var html = $('#summernote').summernote('code');
+
+
+});
+
+</script>
+</body>
+</html>
